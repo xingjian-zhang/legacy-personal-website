@@ -99,16 +99,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "UM-SJTU Joint Institute",
+        href: "http://umji.sjtu.edu.cn/"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "Github",
+        href: "https://github.com/Marco-Jimmy/"
     },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "CSDN",
+        href: "https://blog.csdn.net/weixin_44009599"
     }
 ]
