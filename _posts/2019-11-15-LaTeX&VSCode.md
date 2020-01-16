@@ -12,14 +12,28 @@ tags:
     - 排版
     - 报告
 ---
-# LaTeX × VSCode
-
-第一篇blog 献给LaTeX和VS Code
 
 最近241/215/260/...各种地方需要用到LaTeX肝报告，之前一直用的*Texmaker*，没觉得有多不好，直到受余祖指点，开始上手VSCode，前者完全被碾压。以前只是感觉VSCode写代码还可以，没想到用来写LaTeX体验也可以**这么好**，再次深刻地感受到：一个好的编辑器，能极大地提升我们学习工作的**效率**和**体验**。
 
 有好几个朋友来问为啥VS Code好用，所以开个帖子在这，希望能总结一下使用心得，配置方法等等，也许能帮到大家。此外，写这个贴子也是想锻炼一下自己做TC的能力。欢迎评论指正~
 
+- [简介](#%e7%ae%80%e4%bb%8b)
+  - [帖子目的](#%e5%b8%96%e5%ad%90%e7%9b%ae%e7%9a%84)
+  - [适用对象](#%e9%80%82%e7%94%a8%e5%af%b9%e8%b1%a1)
+  - [*TODO list*：](#todo-list)
+- [简介](#%e7%ae%80%e4%bb%8b-1)
+  - [LaTeX](#latex)
+  - [## Texmaker](#h2-id%22texmaker-29%22texmakerh2)
+  - [Visual Studio Code（for LaTeX）](#visual-studio-codefor-latex)
+- [配置](#%e9%85%8d%e7%bd%ae)
+- [【重点】实用功能](#%e9%87%8d%e7%82%b9%e5%ae%9e%e7%94%a8%e5%8a%9f%e8%83%bd)
+  - [特殊符号输入](#%e7%89%b9%e6%ae%8a%e7%ac%a6%e5%8f%b7%e8%be%93%e5%85%a5)
+  - [自定义代码块/快捷键](#%e8%87%aa%e5%ae%9a%e4%b9%89%e4%bb%a3%e7%a0%81%e5%9d%97%e5%bf%ab%e6%8d%b7%e9%94%ae)
+  - [代码缩进](#%e4%bb%a3%e7%a0%81%e7%bc%a9%e8%bf%9b)
+  - [查找内容](#%e6%9f%a5%e6%89%be%e5%86%85%e5%ae%b9)
+  - [快速插入图片](#%e5%bf%ab%e9%80%9f%e6%8f%92%e5%85%a5%e5%9b%be%e7%89%87)
+- [结语](#%e7%bb%93%e8%af%ad)
+# 简介
 ## 帖子目的
 
 * 介绍VS Code编辑LaTeX的特性
