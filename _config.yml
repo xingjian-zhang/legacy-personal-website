@@ -81,6 +81,12 @@ friends:
         { title: "UM-SJTU Joint Institute", href: "http://umji.sjtu.edu.cn/" },
         { title: "Github", href: "https://github.com/Marco-Jimmy/" },
         { title: "CSDN", href: "https://blog.csdn.net/weixin_44009599" },
-        { title: "Digital Clock", href:"https://marco-jimmy.github.io/digital-clock/"},
-        { title: "Simple Game", href:"https://marco-jimmy.github.io/rock_paper_scissors/"}
+        {
+            title: "Digital Clock",
+            href: "https://marco-jimmy.github.io/digital-clock/",
+        },
+        {
+            title: "Simple Game",
+            href: "https://marco-jimmy.github.io/rock_paper_scissors/",
+        },
     ]
