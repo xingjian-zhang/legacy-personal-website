@@ -8,9 +8,9 @@ header-img: img/post-bg-coffee.jpg
 catalog: true
 tags:
     - Python
-	- JSON
-	- 爬虫
-	- NLP
+    - JSON
+    - 爬虫
+    - NLP
 ---
 
 # 闲着没事爬了一下批站
