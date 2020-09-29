@@ -81,5 +81,5 @@ friends:
         { title: "UM-SJTU Joint Institute", href: "http://umji.sjtu.edu.cn/" },
         { title: "Github", href: "https://github.com/xingjian-zhang/" },
         { title: "CSDN", href: "https://blog.csdn.net/weixin_44009599" },
-        {title: "Foreseer Group", href: "http://foreseer.si.umich.edu/"},
+        { title: "Foreseer Group", href: "http://foreseer.si.umich.edu/"},
     ]
