@@ -2,26 +2,26 @@
 title: JIM Blog
 SEOTitle: JIM的博客 | JIM Blog
 header-img: img/blue-tiger.jpg
-email: xingjian_zhang@sjtu.edu.cn
-description: "Engineers Change The World!"
+email: jimmyzxj@umich.edu
+description: "Keep Calm And Trust Engineers."
 keyword: "University, JIM的博客, SJTU, Joint Institute"
-url: "http://marco-jimmy.github.io" # your host, for absolute URL
+url: "http://xingjian-zhang.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/Marco-Jimmy/Marco-Jimmy.github.io.git" # you code repository
+github_repo: "https://github.com/xingjian-zhang/xingjian-zhang.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "Engineers change the world!"
+sidebar-about-description: "Keep Calm And Trust Engineers."
 sidebar-avatar: /img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: false
 # weibo_username:     qiubaiying
 # zhihu_username:     高速怨曲
-github_username: Marco-Jimmy
+github_username: xingjian-zhang
 # facebook_username:  baiying.qiu.7
 # jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+# twitter_username:   qiubaiying
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -52,9 +52,9 @@ gitalk:
     enable: true #是否开启Gitalk评论
     clientID: 79d69c624ec99fa24b59 #生成的clientID
     clientSecret: 8a99af009452e6bd4432d3120b5d823278603bc0 #生成的clientSecret
-    repo: Marco-Jimmy.github.io #仓库名称
-    owner: Marco-Jimmy #github用户名
-    admin: Marco-Jimmy
+    repo: xingjian-zhang.github.io #仓库名称
+    owner: xingjian-zhang #github用户名
+    admin: xingjian-zhang
     distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # 统计
@@ -79,14 +79,7 @@ service-worker: true
 friends:
     [
         { title: "UM-SJTU Joint Institute", href: "http://umji.sjtu.edu.cn/" },
-        { title: "Github", href: "https://github.com/Marco-Jimmy/" },
+        { title: "Github", href: "https://github.com/xingjian-zhang/" },
         { title: "CSDN", href: "https://blog.csdn.net/weixin_44009599" },
-        {
-            title: "Digital Clock",
-            href: "https://marco-jimmy.github.io/digital-clock/",
-        },
-        {
-            title: "Simple Game",
-            href: "https://marco-jimmy.github.io/rock_paper_scissors/",
-        },
+        {title: "Foreseer Group", href: "http://foreseer.si.umich.edu/"},
     ]
