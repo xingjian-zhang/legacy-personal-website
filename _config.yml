@@ -50,8 +50,8 @@ kramdown:
 # Gitalk
 gitalk:
     enable: true #是否开启Gitalk评论
-    clientID: 79d69c624ec99fa24b59 #生成的clientID
-    clientSecret: 8a99af009452e6bd4432d3120b5d823278603bc0 #生成的clientSecret
+    clientID: 8903f788f3300aa68496 #生成的clientID
+    clientSecret: 56694d4edbb1797b9e5c11ab9330982b9d487d31 #生成的clientSecret
     repo: xingjian-zhang.github.io #仓库名称
     owner: xingjian-zhang #github用户名
     admin: xingjian-zhang
