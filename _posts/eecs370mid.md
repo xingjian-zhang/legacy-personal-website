@@ -1,0 +1,75 @@
+---
+layout:     post
+title:      Notes for EECS370 Mid
+subtitle:   FA2020 EECS370 @Umich
+date:       2020-10-20
+author:     JIM
+header-img: img/post-bg-coffee.jpg
+catalog: true
+tags:
+    - EECS370
+    - CTPP
+---
+
+### Runtime Memory
+
+##### Stack
+
+ starts at 0x0000 007F FFFF FFFC and grows down to lower addresses. Bottom of the stack resides in the SP register
+
+##### Heap
+
+starts above static data and grows up to higher addresses. Allocation done explicitly with malloc(). Deallocation with free(). Runtime error if no free memory before running into SP address. NB not same as data structure heap—just uninitialized mem.
+
+##### Static
+
+starts above text. Holds all global variables and those locals explicitly declared as “static”.
+
+##### Text
+
+starts at 0x0000 0000 0004 0000. Holds all instructions in the program (except for dynamically linked library routines, DLLs)
+
+### Single Cycle Timing
+
+| Inst    | get Inst (read Mem) | read Reg | ALU Op | read/write Mem | write Reg |
+| ------- | ------------------- | -------- | ------ | -------------- | --------- |
+| add/nor | √                   | √        | √      |                | √         |
+| beq     | √                   | √        | √      |                |           |
+| sw      | √                   | √        | √      | √              |           |
+| lw      | √                   | √        | √      | √              | √         |
+
+* "get Instruction" is essentially read memory once
+
+
+### Symbol Table
+* ```main``` should go to the symbol table.
+* global function (both declaration and implementation) should go to the symbol table.
+
+### Relocation Table
+* dereference a local pointer to a global variable does not go to the relocation table.
+
+* read/write global variable should go to the relocation table
+* [LC2K] lw/sw/.fill will go to the relocation table
+
+### Multicycle Datapath
+
+1. Fetch instruction
+   1. IR = new Instruction
+   2. ALU Result = PC+1
+2. Decode instruction
+   1. Read Reg
+   2. PC++
+3. ... (Determine the *Enable* signals first)
+
+### Terminology
+
+##### PC-relative addressing
+
+specifies the target of a branch relative to the current branch instruction
+
+~~(rather than  the instruction after the branch instruction.)~~
+
+##### Conditional & Unconditional branch
+
+[LC2K] `beq` is conditional; `jalr` is unconditional
+
