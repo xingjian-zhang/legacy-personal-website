@@ -15,7 +15,6 @@ tags:
 	- Learning-to-Rank
 	- Plackett-Luce Model
 	- Rank Aggregation
-
 ---
 
 ## Resource
