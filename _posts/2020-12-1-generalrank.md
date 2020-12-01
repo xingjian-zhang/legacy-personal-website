@@ -55,7 +55,7 @@ Contrary to traditional structures of revealed preference, modern datasets are u
 
 ### Generalized Rank-Breaking
 
-The generalized rank-breaking a hierarchy of estimators ordered in increasing computational complexity and achieving increasing accuracy. **The key idea is to break down the heterogeneous revealed preferences into simpler pieces of ordinal relations, and apply an estimator tailored for those simple structures treating each piece as independent.**
+The generalized rank-breaking is a hierarchy of estimators ordered in increasing computational complexity and achieving increasing accuracy. **The key idea is to break down the heterogeneous revealed preferences into simpler pieces of ordinal relations, and apply an estimator tailored for those simple structures treating each piece as independent.**
 
 ### Algorithmic Weakening & Time-Data Tradeoff
 
@@ -85,7 +85,7 @@ It can be shown that the PL model is **generated** by first independently assign
 
 #### property of sequential choices
 
-$P_\theta(i_3\prec i_2\prec i_1)=P_\theta(\{i_3, i_2\}\prec i_1)P_\theta(i_3\prec i_2)$
+$$P_\theta(i_3\prec i_2\prec i_1)=P_\theta(\{i_3, i_2\}\prec i_1)P_\theta(i_3\prec i_2)$$
 
 Thus,
 
@@ -107,13 +107,12 @@ where $\Omega_b$ is a designed bounded set of $\theta$.
 
 #### cumulative distribution function
 
-${\displaystyle F(x;\mu ,\beta )=e^{-e^{-(x-\mu )/\beta }}\,}$
-
+$${\displaystyle F(x;\mu ,\beta )=e^{-e^{-(x-\mu )/\beta }}\,}$$
 #### standard gumbel distribution
 
 The standard Gumbel distribution is the case where ${\displaystyle \mu =0}$ and ${\displaystyle \beta =1}$ with cumulative distribution function
 
-${\displaystyle F(x;\mu ,\beta )=e^{-e^{-x}}}$
+$${\displaystyle F(x;\mu ,\beta )=e^{-e^{-x}}}$$
 
 #### merits
 
