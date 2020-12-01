@@ -1,20 +1,14 @@
 ---
 layout:     post
-title:      Generalized Rank-Breaking
-subtitle:   Computation and Statistical Tradeoffs
-date:       2020-12-01
+title:      Notes for EECS370 Mid
+subtitle:   FA2020 EECS370 @Umich
+date:       2020-10-20
 author:     JIM
-header-img: img/post-bg-desk.jpg
-mathjax: true
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-    - Foreseer
-    - ML
-    - Paper
-    - Notes
-	- Learning-to-Rank
-	- Plackett-Luce Model
-	- Rank Aggregation
+    - EECS370
+    - CTPP
 
 ---
 
