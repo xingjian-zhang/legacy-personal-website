@@ -1,15 +1,17 @@
 ---
 layout:     post
-title:      Notes for EECS370 Mid
-subtitle:   FA2020 EECS370 @Umich
-date:       2020-10-20
+title:      Generalized rank-breaking
+subtitle:   computational and statistical trade-offs
+date:       2020-12-01
 author:     JIM
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-    - EECS370
-    - CTPP
-
+    - LearningToRank
+    - ML
+    - Foreseer
+    - Paper
+    - Notes
 ---
 
 ## Resource
