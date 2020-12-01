@@ -1,22 +1,23 @@
 ---
-layout:     post
-title:      Generalized rank-breaking
-subtitle:   computational and statistical trade-offs
-date:       2020-12-01
-author:     JIM
+layout: post
+title: Generalized rank-breaking
+subtitle: computational and statistical trade-offs
+date: 2020-12-01
+author: JIM
 header-img: img/post-bg-coffee.jpeg
 catalog: true
+mathjax: true
 tags:
-    - LearningToRank
-    - ML
-    - Foreseer
-    - Paper
-    - Notes
+  - LearningToRank
+  - ML
+  - Foreseer
+  - Paper
+  - Notes
 ---
 
 ## Resource
 
-Khetan, A. and Oh, S. (2018). Generalized rank-breaking: computational and statistical trade-offs. *The Journal of Machine Learning Research*, 19(1):983–1024.
+Khetan, A. and Oh, S. (2018). Generalized rank-breaking: computational and statistical trade-offs. _The Journal of Machine Learning Research_, 19(1):983–1024.
 
 ## Abstract
 
@@ -34,7 +35,7 @@ Khetan, A. and Oh, S. (2018). Generalized rank-breaking: computational and stati
 > the set-wise comparisons, we provide a generalization of the minorization maximization algorithm
 > and give guarantees on its convergence.
 >
-> **Keywords:**  Rank aggregation, Plackett-Luce model, Sample and Computational tradeoff.
+> **Keywords:** Rank aggregation, Plackett-Luce model, Sample and Computational tradeoff.
 
 ## Core Concepts
 
@@ -44,13 +45,13 @@ In many applications such as election, policy making, polling, and recommendatio
 
 ### Traditional Structures of Revealed Preference
 
-* **Pairwise Comparison** e.g. Sports and chess matches.
-* **Best-out-of-$\kappa$ comparison** e.g. Historical purchase data.
-*  **$\kappa$-way Coparison** e.g. Elections and surveys.
+- **Pairwise Comparison** e.g. Sports and chess matches.
+- **Best-out-of-$\kappa$ comparison** e.g. Historical purchase data.
+- **$\kappa$-way Coparison** e.g. Elections and surveys.
 
 ### Modern Structures of Revealed Preference
 
-Contrary to traditional structures of revealed preference, modern datasets are unstructured and heterogeneous, leading to significant increase in computation complexity. In the most general case, the preference relations are expressed in the form of *partially ordered set (poset)*. Furthermore, under *the PL model*, a poset can be represented as a *directed acyclic graph (DAG)*.
+Contrary to traditional structures of revealed preference, modern datasets are unstructured and heterogeneous, leading to significant increase in computation complexity. In the most general case, the preference relations are expressed in the form of _partially ordered set (poset)_. Furthermore, under _the PL model_, a poset can be represented as a _directed acyclic graph (DAG)_.
 
 ### Generalized Rank-Breaking
 
@@ -66,19 +67,19 @@ In classical statistics, one is interested in the tradeoff between the sample si
 
 ### Setup
 
-We assume there are $n$ users and $d$ items. We denote the set of $n$ users by $[n]=\{1,...,n\}$ and the set of $d$ items by $[d]$. We assume that each user $j\in [n]$ is presented with a subset of items $S_j\subset [d]$, and independently provides her ordinal preference in the form of *poset*, where the ordering is drawn from the *Plackett-Luce (PL) model*. Let $\mathcal{G}_j$ denote the DAG of the poset provided by the user $j$ over $S_j$ according to the PL model with weights $\theta^*$. 
+We assume there are $n$ users and $d$ items. We denote the set of $n$ users by $[n]=\{1,...,n\}$ and the set of $d$ items by $[d]$. We assume that each user $j\in [n]$ is presented with a subset of items $S_j\subset [d]$, and independently provides her ordinal preference in the form of _poset_, where the ordering is drawn from the _Plackett-Luce (PL) model_. Let $\mathcal{G}_j$ denote the DAG of the poset provided by the user $j$ over $S_j$ according to the PL model with weights $\theta^*$.
 
 ### Task
 
-The task is to learn $\widehat\theta$,  an estimate of the true weights (i.e. utilities) $\theta^*$.
+The task is to learn $\widehat\theta$, an estimate of the true weights (i.e. utilities) $\theta^*$.
 
 ### Plackett-Luce Model
 
-Plackett-Luce Model is a special case of *random utility models*, where each item $i$ is parametrized by a latent true *utility/weight* $\theta_i\in\mathbb{R}$. When offered with $S_j\subset[d]$, the user **samples** the perceived utility $U_i$ for each item $i$ independently according to $U_i=\theta_i+Z_i$, where $Z_i$s are i.i.d. noise. In particular, the PL model assumes $Z_i$ follow the *standard Gumbel distribution*. The observed poset is a partial observation of the ordering according to this perceived utilities.
+Plackett-Luce Model is a special case of _random utility models_, where each item $i$ is parametrized by a latent true _utility/weight_ $\theta_i\in\mathbb{R}$. When offered with $S_j\subset[d]$, the user **samples** the perceived utility $U_i$ for each item $i$ independently according to $U_i=\theta_i+Z_i$, where $Z_i$s are i.i.d. noise. In particular, the PL model assumes $Z_i$ follow the _standard Gumbel distribution_. The observed poset is a partial observation of the ordering according to this perceived utilities.
 
 #### statistical equivalence
 
-Consider a (full) ranking as a map $\sigma_j:[|S_j|]\to S_j$. It can be shown that the PL model is **generated** by first independently assigning each item $i\in S_j$ an unobserved value $Y_i$, exponentially distributed with mean $e^{-\theta_i}$, and the resulting ranking $\sigma_j$ is inversely given by $Y_i$ so that $Y_{\sigma_j(1)}\leq Y_{\sigma_j(2)}\leq ...\leq Y_{\sigma_j(|S_j|)}$. *(Q: In reality, does the exponential distribution make sense?)*
+Consider a (full) ranking as a map $\sigma_j:[|S_j|]\to S_j$. It can be shown that the PL model is **generated** by first independently assigning each item $i\in S_j$ an unobserved value $Y_i$, exponentially distributed with mean $e^{-\theta_i}$, and the resulting ranking $\sigma_j$ is inversely given by $Y_i$ so that $Y_{\sigma_j(1)}\leq Y_{\sigma_j(2)}\leq ...\leq Y_{\sigma_j(|S_j|)}$. _(Q: In reality, does the exponential distribution make sense?)_
 
 #### property of sequential choices
 
@@ -114,5 +115,5 @@ ${\displaystyle F(x;\mu ,\beta )=e^{-e^{-x}}}$
 
 #### merits
 
-* log-concave PDF
-* memoryless
+- log-concave PDF
+- memoryless
