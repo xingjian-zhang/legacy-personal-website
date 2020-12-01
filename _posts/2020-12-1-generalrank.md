@@ -79,7 +79,9 @@ Plackett-Luce Model is a special case of _random utility models_, where each ite
 
 #### statistical equivalence
 
-Consider a (full) ranking as a map $\sigma_j:[|S_j|]\to S_j$. It can be shown that the PL model is **generated** by first independently assigning each item $i\in S_j$ an unobserved value $Y_i$, exponentially distributed with mean $e^{-\theta_i}$, and the resulting ranking $\sigma_j$ is inversely given by $Y_i$ so that $Y_{\sigma_j(1)}\leq Y_{\sigma_j(2)}\leq ...\leq Y_{\sigma_j(|S_j|)}$. _(Q: In reality, does the exponential distribution make sense?)_
+Consider a (full) ranking as a map $\sigma_j : [|S_j|]\to S_j$ . 
+It can be shown that the PL model is **generated** by first independently assigning each item $i\in S_j$ an unobserved value $Y_i$, exponentially distributed with mean $e^{-\theta_i}$, and the resulting ranking $\sigma_j$ is inversely given by $Y_i$ so that $Y_{\sigma_j(1)}\leq Y_{\sigma_j(2)}\leq ...\leq Y_{\sigma_j(|S_j|)}$.
+ _(Q: In reality, does the exponential distribution make sense?)_
 
 #### property of sequential choices
 
@@ -93,7 +95,7 @@ $$\displaystyle P_{\theta}[\sigma_j]=\prod_{i=1}^{|S_j|-1}\dfrac{\exp(\theta_{\s
 
 Probability of observing a DAG is the sum of probabilities of all possible rankings that are consistent with it. i.e.
 
-$\displaystyle P_\theta[\mathcal{G}_j]=\sum_{\sigma\in\mathcal{G}_j}P_{\theta}[\sigma]$
+$$\displaystyle P_\theta[\mathcal{G}_j]=\sum_{\sigma\in\mathcal{G}_j}P_{\theta}[\sigma]$$
 
 where the notation $\mathcal{G_j}$ is slightly abused to denote the set of all permitting rankings that are consistent with the DAG $\mathcal{G_j}$. The maximum likelihood estimate maximizes log-likelihood of observing $\mathcal{G_j}$ for each $j$:
 
