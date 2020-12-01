@@ -2,7 +2,7 @@
 layout:     post
 title:      Generalized Rank-Breaking
 subtitle:   Computation and Statistical Tradeoffs
-date:       2020-12-1
+date:       2020-12-01
 author:     JIM
 header-img: img/post-bg-desk.jpg
 mathjax: true
@@ -15,6 +15,7 @@ tags:
 	- Learning-to-Rank
 	- Plackett-Luce Model
 	- Rank Aggregation
+
 ---
 
 ## Resource
