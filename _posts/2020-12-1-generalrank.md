@@ -108,6 +108,7 @@ where $\Omega_b$ is a designed bounded set of $\theta$.
 #### cumulative distribution function
 
 $${\displaystyle F(x;\mu ,\beta )=e^{-e^{-(x-\mu )/\beta }}\,}$$
+
 #### standard gumbel distribution
 
 The standard Gumbel distribution is the case where ${\displaystyle \mu =0}$ and ${\displaystyle \beta =1}$ with cumulative distribution function
